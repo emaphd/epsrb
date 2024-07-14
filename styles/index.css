@@ -3,5 +3,9 @@ body {
 }
 
 .loading-title {
+    color: gray
+}
+
+.working-title {
     color: #2b8c4a;
 }
