@@ -38,7 +38,7 @@ Papa.parse(emaphdGSheetURL, {
 
             console.log("in the project space")
             
-                 emaphdDataObj.project.push({
+                 emaphdDataObj.project[index].push({
 
                     "uid" : rawData[index].uID,
                     "utype" : rawData[index].projEventSelect,
