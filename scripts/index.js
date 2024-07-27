@@ -50,7 +50,7 @@ Papa.parse(emaphdGSheetURL, {
                     "url" : rawData[index].projExtURL
             }
             
-            emaphdDataObj.project.push = newProjectEntry; 
+            emaphdDataObj.project.push(newProjectEntry); 
                 
             console.log ("new project" + emaphdDataObj.project);
             console.log(emaphdDataObj);
