@@ -24,16 +24,6 @@ Papa.parse(emaphdGSheetURL, {
     console.log(rawData);
     
     for (let index = 0; index < rawData.length; index++) {
-/* 
-       function isProject(filteredData) {
-            return filteredData[index].projEventSelect === "Project";            
-        };
-        emaphdDataObj.project = rawData.filter(isProject);
-        console.log(emaphdDataObj.project);
-        console.log(emaphdDataObj);
- */
-
-
         if (rawData[index].projEventSelect === "Project") {
 
             console.log("in the project space")
@@ -51,11 +41,10 @@ Papa.parse(emaphdGSheetURL, {
             }
             
             emaphdDataObj.project.push(newProjectEntry); 
-                
-            console.log ("new project" + emaphdDataObj.project);
             console.log(emaphdDataObj);
              
         } else if (rawData[index].projEventSelect === "Event") {
+            
             console.log("in the event space")
 
             let newEventEntry = {
@@ -73,22 +62,8 @@ Papa.parse(emaphdGSheetURL, {
                     "url" : rawData[index].eventExtURL
             }
             
-            emaphdDataObj.event = newEventEntry; 
-                
-            console.log ("new event" + emaphdDataObj.event);
+            emaphdDataObj.event.push(newEventEntry); 
             console.log(emaphdDataObj);
-
-        /*     
-            emaphdDataObj.event.push({
-
-                i : {
-
-                    
-                    }
-                });
-                
-                console.log (emaphdDataObj.event[index]);
- */
         }; 
 
     } // emaphd data return forLoop end
@@ -127,7 +102,7 @@ Papa.parse(emaphdGSheetURL, {
         projModalBtn.setAttribute("type", "button");
         projModalBtn.className = "btn btn-primary"
         projModalBtn.setAttribute("data-bs-toggle", "modal"); 
-        cardModalBtn.setAttribute("data-bs-target", "#modal-proj-" + emaphdDataObj.project[index].uid);
+        projModalBtn.setAttribute("data-bs-target", "#modal-proj-" + emaphdDataObj.project[index].uid);
         
         // create modal & elements
         // > modal
