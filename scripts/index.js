@@ -50,7 +50,7 @@ Papa.parse(emaphdGSheetURL, {
                     "url" : rawData[index].projExtURL
             }
             
-            emaphdDataObj.project[i] = newProjectEntry; 
+            emaphdDataObj.project = newProjectEntry; 
                 
             console.log ("new project" + emaphdDataObj.project);
             console.log(emaphdDataObj);
@@ -73,7 +73,7 @@ Papa.parse(emaphdGSheetURL, {
                     "url" : rawData[index].eventExtURL
             }
             
-            emaphdDataObj.event[i] = newEventEntry; 
+            emaphdDataObj.event = newEventEntry; 
                 
             console.log ("new event" + emaphdDataObj.event);
             console.log(emaphdDataObj);
