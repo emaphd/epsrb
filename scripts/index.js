@@ -28,7 +28,7 @@ Papa.parse(emaphdGSheetURL, {
             
             emaphdDataObj.project.push({
 
-                [index] : {
+                i : {
 
                     "uid" : rawData[index].uID,
                     "utype" : rawData[index].projEventSelect,
@@ -48,7 +48,7 @@ Papa.parse(emaphdGSheetURL, {
             
             emaphdDataObj.event.push({
 
-                [index] : {
+                i : {
 
                     "uid" : rawData[index].uID,
                     "utype" : rawData[index].projEventSelect,
