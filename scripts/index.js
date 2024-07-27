@@ -25,14 +25,14 @@ Papa.parse(emaphdGSheetURL, {
     for (let index = 0; index < rawData.length; index++) {
 
         console.log(rawData);
-/* 
+
         let isProject = function(rawData) {
-            return rawData[index].projEventSelect === "Project";
+            return rawData[0].projEventSelect === "Project";            
         };
         emaphdDataObj.project = rawData.filter(isProject);
         console.log(emaphdDataObj.project);
         console.log(emaphdDataObj);
- */        
+        
 
 /* 
         if (rawData[index].projEventSelect === "Project") {
