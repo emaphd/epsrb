@@ -178,7 +178,7 @@ Papa.parse(emaphdGSheetURL, {
         projModalCloseBtn.setAttribute("aria-label", "close")    
 
         // append card elements to card
-        projCardBody.appendChild(projCardBody);
+        projCardBody.appendChild(projCardTitle);
         projCardFooter.appendChild(projModalBtn);
         projCardBody.appendChild(projCardFooter);
         projCard.appendChild(projCardImg);
