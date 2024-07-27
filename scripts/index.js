@@ -21,23 +21,24 @@ Papa.parse(emaphdGSheetURL, {
  function showEmaphdData(result) {
 
     let rawData = result.data;
-
+    console.log(rawData);
+    
     for (let index = 0; index < rawData.length; index++) {
-
-        console.log(rawData);
-
+/* 
        function isProject(filteredData) {
             return filteredData[index].projEventSelect === "Project";            
         };
         emaphdDataObj.project = rawData.filter(isProject);
         console.log(emaphdDataObj.project);
         console.log(emaphdDataObj);
-        
+ */
 
-/* 
+
         if (rawData[index].projEventSelect === "Project") {
+
+            console.log("in the project space")
             
-            emaphdDataObj.project.push({
+            /* emaphdDataObj.project.push({
 
                 i : {
 
@@ -54,9 +55,11 @@ Papa.parse(emaphdGSheetURL, {
                 });
                 
                 console.log (emaphdDataObj.project[index]);
-            
+             */
         } else if (rawData[index].projEventSelect === "Event") {
-            
+            console.log("in the event space")
+
+        /*     
             emaphdDataObj.event.push({
 
                 i : {
@@ -77,9 +80,9 @@ Papa.parse(emaphdGSheetURL, {
                 });
                 
                 console.log (emaphdDataObj.event[index]);
-
-        }; 
  */
+        }; 
+
     } // emaphd data return forLoop end
 
     // return project cards
