@@ -5,8 +5,8 @@ let emaphdWorkCards = document.getElementById("work-cards-container")
 let emaphdGSheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTq03Pj3fHhrj8GOFsZwkabEJXCZ05RMr44B2ZYQlUAknrKxL-vxQrLI9toXevjUCTww3iJa1O1bWUc/pub?gid=0&single=true&output=csv";
 
 let emaphdDataObj = {
-    "project" : {},
-    "event" : {}
+    "project" : [],
+    "event" : []
 };
 
 // ********** DATA RETURN
@@ -50,7 +50,7 @@ Papa.parse(emaphdGSheetURL, {
                     "url" : rawData[index].projExtURL
             }
             
-            emaphdDataObj.project = newProjectEntry; 
+            emaphdDataObj.project.push = newProjectEntry; 
                 
             console.log ("new project" + emaphdDataObj.project);
             console.log(emaphdDataObj);
