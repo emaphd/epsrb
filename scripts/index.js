@@ -50,20 +50,16 @@ Papa.parse(emaphdGSheetURL, {
                     "url" : rawData[index].projExtURL
             }
             
-            emaphdDataObj.project[index] = newProjectEntry; 
+            emaphdDataObj.project[i] = newProjectEntry; 
                 
-            console.log (emaphdDataObj.project);
+            console.log ("new project" + emaphdDataObj.project);
             console.log(emaphdDataObj);
              
         } else if (rawData[index].projEventSelect === "Event") {
             console.log("in the event space")
 
-        /*     
-            emaphdDataObj.event.push({
-
-                i : {
-
-                    "uid" : rawData[index].uID,
+            let newEventEntry = {
+                "uid" : rawData[index].uID,
                     "utype" : rawData[index].projEventSelect,
                     "title" : rawData[index].eventTitle,
                     "cat" : rawData[index].eventCat,
@@ -75,6 +71,19 @@ Papa.parse(emaphdGSheetURL, {
                     "loc" : rawData[index].eventLoc,
                     "desc" : rawData[index].eventDesc,
                     "url" : rawData[index].eventExtURL
+            }
+            
+            emaphdDataObj.event[i] = newEventEntry; 
+                
+            console.log ("new event" + emaphdDataObj.event);
+            console.log(emaphdDataObj);
+
+        /*     
+            emaphdDataObj.event.push({
+
+                i : {
+
+                    
                     }
                 });
                 
