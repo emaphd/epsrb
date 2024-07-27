@@ -38,9 +38,7 @@ Papa.parse(emaphdGSheetURL, {
 
             console.log("in the project space")
             
-            /* emaphdDataObj.project.push({
-
-                i : {
+                 emaphdDataObj.project.push({
 
                     "uid" : rawData[index].uID,
                     "utype" : rawData[index].projEventSelect,
@@ -51,11 +49,11 @@ Papa.parse(emaphdGSheetURL, {
                     "team" : rawData[index].projTeam,
                     "desc" : rawData[index].projDesc,
                     "url" : rawData[index].projExtURL
-                    }
+                    
                 });
                 
-                console.log (emaphdDataObj.project[index]);
-             */
+                console.log (emaphdDataObj.project);
+             
         } else if (rawData[index].projEventSelect === "Event") {
             console.log("in the event space")
 
