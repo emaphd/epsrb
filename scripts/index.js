@@ -389,11 +389,4 @@ Papa.parse(emaphdGSheetURL, {
 
     } // return work cards end
 
-
-
-
-
-
-
-
     } // showData end

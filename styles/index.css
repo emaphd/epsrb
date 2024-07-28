@@ -2,6 +2,23 @@ body {
     background-color: #000;
 }
 
+#top-card-container {
+    margin-bottom: 200px;
+}
+
+#top-header-name {
+    font-size: 72px;
+    color: #2b8c4a;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+#top-header-headline {
+    font-size: 36px;
+    color: #2b8c4a;
+    margin-bottom: 50px;
+}
+
 .loading-title {
     color: gray
 }
