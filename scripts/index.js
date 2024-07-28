@@ -1,6 +1,6 @@
 console.log("index.js is connected")
 
-let emaphdProjectCards = document.getElementById("project-cards-row");
+let emaphdWorkCards = document.getElementById("work-cards-row");
 let emaphdEventCards = document.getElementById("event-cards-row")
 
 let emaphdGSheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTq03Pj3fHhrj8GOFsZwkabEJXCZ05RMr44B2ZYQlUAknrKxL-vxQrLI9toXevjUCTww3iJa1O1bWUc/pub?gid=0&single=true&output=csv";
@@ -218,7 +218,7 @@ Papa.parse(emaphdGSheetURL, {
         projCardCol.appendChild(projModal);
 
         // append col to DOM card row
-        emaphdProjectCards.append(projCardCol);
+        emaphdWorkCards.append(projCardCol);
 
     } // return project cards end
 

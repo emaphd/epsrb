@@ -3,21 +3,36 @@ body {
 }
 
 #top-card-container {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 #top-header-name {
     font-size: 72px;
     color: #2b8c4a;
-    margin-top: 200px;
-    margin-bottom: 150px;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 #top-header-headline {
     font-size: 36px;
     color: #2b8c4a;
-    margin-bottom: 50px;
+    margin-bottom: 2%;
 }
+
+.top-nav {
+    margin-bottom: 5%;
+    background-color: #000000;
+}
+
+top-nav-brand {
+    color: #2b8c4a;
+    font-weight: 200;
+}
+
+.top-nav-link {
+    color: #2b8c4a;
+}
+
 
 .loading-title {
     color: gray

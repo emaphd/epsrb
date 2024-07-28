@@ -20,41 +20,100 @@
 <!-- body container -->
     <div class="container-fluid">
             <!-- top card container -->
-            <div class="container" id="top-card-container">
+            <div class="container-fluid" id="top-card-container">
                 <div class="row" id="top-card-row">
-                    <h1 id="top-header-name">elizabeth murice alexander, ph.d.</h1>
-                    <h5 id="top-header-headline">artist // designer // developer // scholar</h5>
+                    <div class="col">
+                        <div class="row">
+                            <h1 id="top-header-name">elizabeth murice alexander, ph.d.</h1>
+                        </div>
+                        <div class="row">
+                            <h5 id="top-header-headline">artist // designer // developer // scholar</h5>
+                        </div>                        
+                    </div>                   
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar bg-dark navbar-expand-lg top-nav" data-bs-theme="dark">
+                            <div class="container-fluid">
+                              <a class="navbar-brand top-nav-brand" href="#top-card-container">
+                                <img src="./assets/imgs/emaphd-logo-color.png" alt="emaphd logo" width="50" height="50">
+                              </a>
+
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+
+                              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                  <a class="nav-link top-nav-link" href="#work-card-container">work</a>
+                                  <a class="nav-link top-nav-link" href="#event-card-container">events</a>
+                                  <a class="nav-link top-nav-link disabled" aria-disabled="true" href="#grant-card-container">grants</a>
+                                  <a class="nav-link top-nav-link disabled" aria-disabled="true" href="#fellowship-card-container">fellowships</a>
+                                  <a class="nav-link top-nav-link disabled" aria-disabled="true" href="#award-card-container">awards</a>
+                                  <a class="nav-link top-nav-link disabled" aria-disabled="true" href="#class-card-container">classes</a>
+                                  <a class="nav-link top-nav-link disabled" aria-disabled="true" href="#service-card-container">service</a>
+                                  <a class="nav-link top-nav-link" href="#position-card-container">positions</a>
+                                  <a class="nav-link top-nav-link" href="#education-card-container">education</a>
+                                  <a class="nav-link top-nav-link" href="#about-card-container">about</a>
+                                  <a class="nav-link top-nav-link" href="#contact-card-container">contact</a>
+                                </div>
+                              </div>
+
+                            </div>
+                          </nav>
+                    </div>
                 </div>
                 
             </div>
-
-            <!-- header nav here -->
     
     <!-- page content container -->
         <div class="container">
             
-
-
-            <!-- project card container -->
-            <div class="container" id="project-card-container">
+            <!-- work card container -->
+            <div class="container" id="work-card-container">
                 <div class="row">
                     <h1 class="working-title">:: work</h1>
                 </div>
-                    <div class="row" id="project-cards-row"></div>
+                    <div class="row" id="work-cards-row"></div>
                 </div>
-
             </div>
             
             <!-- event card container -->
-            <div class="container" id="event-cards-container">
+            <div class="container" id="event-card-container">
                 <div class="row">
                     <h1 class="working-title">:: events</h1>
                 </div>
                 <div class="row" id="event-cards-row"> </div>
             </div>
-                        
+            <hr>
+            <!-- grants container -->
+            <div class="container" id="grant-card-container">
+                <h1 class="loading-title">:: grants</h1>
+            </div>
+
+            <!-- fellowships container -->
+            <div class="container" id="fellowship-card-container">
+                <h1 class="loading-title">:: fellowships</h1>
+            </div>
+
+            <!-- awards container -->
+            <div class="container" id="award-card-container">
+                <h1 class="loading-title">:: awards</h1>
+            </div>
+
+            <!-- classes container -->
+            <div class="container" id="class-card-container">
+                <h1 class="loading-title">:: classes</h1>
+            </div>
+
+            <!-- service container -->
+            <div class="container" id="service-card-container">
+                <h1 class="loading-title">:: service</h1>
+            </div>
+            <hr>            
             <!-- positions section container -->
-            <div class="container">
+            <div class="container" id="position-card-container">
                 <div class="row">
                     <h1 class="working-title">:: positions</h1>
                 </div>
@@ -66,7 +125,6 @@
                         <div class="row">
                             <h1 class="working-title">:: ~ current</h1>
                         </div>
-
 
                         <div class="row">
                             <div class="col">
@@ -98,10 +156,10 @@
                             <div class="col">
                                 <div class="card" style="width: 100%;">
                                     <div class="row">
-                                        <div class="col-1">
-                                            <img src="./assets/imgs/emaphd-logo-color.png" class="card-img-top" alt="..." style="width: 100px">
+                                        <div class="col-2">
+                                            <img src="./assets/imgs/emaphd-logo-color.png" class="card-img-top" alt="..." style="width: 100%">
                                         </div>
-                                        <div class="col-11">
+                                        <div class="col-10">
                                             <div class="card-body">
                                                 <h6 class="card-title">EMAPHD Consulting</h6>
                                                 <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -172,7 +230,6 @@
                                   </div>
                             </div>
                         </div>
-
 
                         <div class="row">
                             <h1 class="working-title">:: ~ previous</h1>
@@ -307,32 +364,14 @@
                                   </div>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
-
                     </div>
 
                     </div>
-
-
-                    
-
-                    
-                    
-
 
                 </div>
 
-
             <!-- education section container -->
-            <div class="container">
+            <div class="container" id="education-card-container">
                 <div class="row">
                     <h1 class="working-title">:: education</h1>
                 </div>
@@ -469,21 +508,16 @@
 
 
                 </div>
-
-            
-
-
-
             </div>
-                           
+             <hr>              
             <!-- about container -->
-            <div class="container">
-                <h1 class="loading-title">about section loading</h1>
+            <div class="container" id="about-card-container">
+                <h1 class="loading-title">:: about</h1>
             </div>
                           
             <!-- contact container -->
-            <div class="container">
-                <h1 class="loading-title">contact section loading</h1>
+            <div class="container" id="contact-card-container">
+                <h1 class="loading-title">:: contact</h1>
             </div>
 
         </div>
