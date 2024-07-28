@@ -9,3 +9,7 @@ body {
 .working-title {
     color: #2b8c4a;
 }
+
+.proj-card {
+    width: 15rem;
+}
