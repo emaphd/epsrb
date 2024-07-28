@@ -265,7 +265,7 @@ Papa.parse(emaphdGSheetURL, {
     // > modal
     let eventModal = document.createElement("div");
     eventModal.className = "modal fade";
-    eventModal.setAttribute("id", "modal-proj-" + emaphdDataObj.event[index].uid);
+    eventModal.setAttribute("id", "modal-event-" + emaphdDataObj.event[index].uid);
     eventModal.setAttribute("tabindex", "-1");
     eventModal.setAttribute("aria-labelledby", "modalLabel" + emaphdDataObj.event[index].uid);
     eventModal.setAttribute("aria-hidden", "true");         
