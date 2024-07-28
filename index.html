@@ -23,81 +23,31 @@
     <!-- page content container -->
         <div class="container">
             
-            <!-- business card container -->
-            <div class="container">
-                <img src="./assets/imgs/EMAPHD-website-head_v2-green.png" class="img-fluid" alt="">
+            <!-- top card container -->
+            <div class="container" id="top-card-container">
+                <div class="row" id="top-card-row">
+                    <img src="./assets/imgs/EMAPHD-website-head_v2-green.png" class="img-fluid" alt="website top card">
+                </div>
+                
             </div>
 
-            <!-- work card container -->
-            <div class="container">
-                <h1 class="working-title">project cards</h1>
-                <div class="row" id="project-cards-container">
-
-
-
-                    <!-- work card button + detail modal -->
-                    <div class="col-sm-6 col-lg-4 mb-4"> 
-
-                        <div class="card" style="width: 18rem;">
-                            <img src="./assets/imgs/emaphd-logo-color.png" class="card-img-top" alt="EMAPHD logo used as placeholder">
-                            
-                            <div class="card-body">
-                            <!-- card header -->
-                                <h5 class="card-title">projectName</h5>
-                            <!-- card modal button -->
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#work-modal-1">more</button>
-                            </div>
-
-                        </div>                        
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="work-modal-1" tabindex="-1" aria-labelledby="workModalOneLabel" aria-hidden="true">
-
-                            <div class="modal-dialog">
-                                
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="workModalOneLabel">projectName</h1>
-                                    </div>
-
-                                    <div class="modal-body">
-
-                                        <img class="img-fluid" src="./assets/imgs/emaphd-logo-color.png" alt="EMAPHD logo used as placeholder">
-
-                                        <h6>projectTimeline</h6>
-                                        <h6>projectCollaborators</h6>
-                                        <p>projectDescription</p>
-                                        <a href="http://google.com">projectExtLink</a>
-
-
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-
-
-                    </div>
-
-
+            <!-- project card container -->
+            <div class="container" id="project-card-container">
+                <div class="row">
+                    <h1 class="working-title">project cards</h1>
+                </div>
+                    <div class="row" id="project-cards-row"></div>
                 </div>
 
             </div>
             
             <!-- event card container -->
-            <div class="container">
-                <h1 class="working-title">event cards</h1>
+            <div class="container" id="event-cards-container">
+                <div class="row">
+                    <h1 class="working-title">event cards</h1>
+                </div>
                 
-                <div class="row" id="work-card-container">
+                <div class="row" id="event-cards-row">
 
                     <!-- work card button + detail modal -->
                     <div class="col-sm-6 col-lg-4 mb-4"> 
