@@ -149,7 +149,7 @@ Papa.parse(emaphdGSheetURL, {
         // create modal div - img & store source
         let projModalImg = document.createElement("img");
         projModalImg.className = "img-fluid";
-        projModalImg.setAttribute("src","./assets/imgs/" + emaphdDataObj.project[index].imgID + ".png");
+        projModalImg.setAttribute("src","./assets/imgs/emaphd-logo-color.png");
 
         // create modal div - timeline
         let projModalTimeline = document.createElement("h6");
