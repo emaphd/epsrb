@@ -217,7 +217,7 @@ Papa.parse(emaphdGSheetURL, {
         projCardCol.appendChild(projModal);
 
         // append col to DOM card row
-        emaphdWorkCards.append(projCardCol);
+        emaphdProjectCards.append(projCardCol);
 
     } // return project cards end
 
