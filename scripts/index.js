@@ -267,7 +267,7 @@ Papa.parse(emaphdGSheetURL, {
     eventModal.className = "modal fade";
     eventModal.setAttribute("id", "modal-event-" + emaphdDataObj.event[index].uid);
     eventModal.setAttribute("tabindex", "-1");
-    eventModal.setAttribute("aria-labelledby", "modalLabel" + emaphdDataObj.event[index].uid);
+    eventModal.setAttribute("aria-labelledby", "eventModalLabel" + emaphdDataObj.event[index].uid);
     eventModal.setAttribute("aria-hidden", "true");         
 
     // > modal-dialog
